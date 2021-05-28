@@ -8,14 +8,31 @@ public class Address {
     private String zipCode;
     private String country = "USA";
 
+    public Address(){
+        System.out.println("Constructor address");
+        street = "123 google st";
+        city = "java";
+        state = "WS";
+        zipCode = "00000";
+    }
+
     @Override
     public String toString() {
         return "Address{" +
-                "street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zipCode='" + zipCode + '\'' +
+                street + '\'' +
+               city + '\'' +
+                state + '\'' +
+                zipCode + '\'' +
                 '}';
+
+
+    }
+    //is a shortcut to initialize variables in same statement/ second constructor, overloaded constructor
+    public Address(String street, String city, String state, String zipCode){
+        this.street = street;
+        // or 2nd method
+        //setStreet(street);
+
     }
 
     public String getStreet() {
