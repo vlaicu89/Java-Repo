@@ -6,6 +6,8 @@ public class StudentObject {
         Student st2 = new Student();
         Student st3 = new Student("Akbar");
         Student st4= new Student("Serghei");
+
+        Student st5 = new Student("Nasiba", 25);
     }
 
 }
